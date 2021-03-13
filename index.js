@@ -6,8 +6,8 @@ const eatSound = new Audio("mixkit-chewing-something-crunchy-2244.wav", 100, tru
 const gameOverSound = new Audio("mixkit-arcade-retro-game-over-213.wav", 100, true);
 myMusic.volume = 0.2;
 
-cvs.width = screen.availWidth * 0.8;
-cvs.height = screen.availHeight * 0.8;
+cvs.width = 400;
+cvs.height = 400;
 var YOUR_SCORE = "Your score: ";
 var score = 0;
 var frames = 0;
