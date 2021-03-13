@@ -7,11 +7,12 @@
             display: block;
             border: 3px solid black;
             background-color: lightgrey;
-            height: 50%;
-            width: 50%;
+            height: 80%;
+            width: 80%;
         }
         
-        #labelScore {
+        #labelScore,
+        #labelScore2 {
             font-size: 30px;
             font-family: 'Impact';
             animation-name: score;
@@ -67,7 +68,8 @@
     </audio>
 
     <br/>
-    <label id="labelScore"></label>
+    <label id="labelScore"></label> &nbsp;
+    <label id="labelScore2"></label>
     <br/>
     <button onclick="play()" type="button">Play </button>
     <button onclick="pause()" type="button">Pause</button>

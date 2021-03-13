@@ -1,6 +1,7 @@
 const cvs = document.getElementById("myCanvas");
 const ctx = cvs.getContext("2d");
 const labelScore = document.getElementById("labelScore");
+const labelScore2 = document.getElementById("labelScore2");
 const myMusic = document.getElementById("music");
 const eatSound = new Audio("mixkit-chewing-something-crunchy-2244.wav", 100, true);
 const gameOverSound = new Audio("mixkit-arcade-retro-game-over-213.wav", 100, true);
@@ -9,7 +10,9 @@ myMusic.volume = 0.2;
 cvs.width = 400;
 cvs.height = 400;*/
 var YOUR_SCORE = "Your score: ";
+var YOUR_HIGH_SCORE = "Your high score: ";
 var score = 0;
+var score2 = 0;
 var frames = 0;
 var speed = speedDefault;
 var speedDefault = 1;
@@ -161,6 +164,9 @@ const snake = {
                 });
                 foodEaten = false;
                 score = score + 1;
+                if (score > score2) {
+                    score2 = score;
+                }
                 //labelScore.textContent = YOUR_SCORE + score;
             }
 
@@ -215,6 +221,7 @@ function main() {
     snake.draw();
     food.draw();
     labelScore.textContent = YOUR_SCORE + score;
+    labelScore2.textContent = YOUR_HIGH_SCORE + score2;
     frames++;
 
     if (score == dec) {
