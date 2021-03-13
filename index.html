@@ -34,6 +34,7 @@
             padding: 11px 23px;
             text-decoration: none;
             text-shadow: 0px -1px 0px #2b665e;
+            width: 15vh;
         }
         
         Button:hover {
@@ -78,10 +79,25 @@
     <canvas id="myCanvas"></canvas>
     <script src="index.js"></script>
     <br>
-    <button class="keyButton" onclick="pressKey('4')" type="button">left </button>
-    <button class="keyButton" onclick="pressKey('8')" type="button">up </button>
-    <button class="keyButton" onclick="pressKey('2')" type="button">down </button>
-    <button class="keyButton" onclick="pressKey('6')" type="button">right </button>
+
+    <table style="width:100%">
+        <tr>
+            <td></td>
+            <td><button class="keyButton" onclick="pressKey('8')" type="button">up </button></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td> <button class="keyButton" onclick="pressKey('4')" type="button">left </button></td>
+            <td></td>
+            <td><button class="keyButton" onclick="pressKey('6')" type="button">right </button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td> <button class="keyButton" onclick="pressKey('2')" type="button">down </button></td>
+            <td></td>
+        </tr>
+    </table>
+
     <br>
     <a href="https://mixkit.co/" target="_blank">Music provided by mixkit</a></body>
 
