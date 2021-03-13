@@ -15,7 +15,7 @@ var score = 0;
 var score2 = 0;
 var frames = 0;
 var speed = speedDefault;
-var speedDefault = 1;
+var speedDefault = 3;
 var foodEaten = false;
 var dec = 10
 
