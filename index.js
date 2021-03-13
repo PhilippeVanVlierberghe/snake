@@ -5,9 +5,9 @@ const myMusic = document.getElementById("music");
 const eatSound = new Audio("mixkit-chewing-something-crunchy-2244.wav", 100, true);
 const gameOverSound = new Audio("mixkit-arcade-retro-game-over-213.wav", 100, true);
 myMusic.volume = 0.2;
-
+/*
 cvs.width = 400;
-cvs.height = 400;
+cvs.height = 400;*/
 var YOUR_SCORE = "Your score: ";
 var score = 0;
 var frames = 0;
