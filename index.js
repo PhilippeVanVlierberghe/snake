@@ -202,7 +202,7 @@ const snake = {
                 this.position[0].y += 20;
             };
             //food collision
-            if (getDistance(food.x, food.y, this.position[0].x, this.position[0].y) <= 2 * food.r) {
+            if (getDistance(food.x, food.y, this.position[0].x, this.position[0].y) <= 1.5 * food.r) {
                 food.x = Math.random() * cvs.width;
                 food.y = Math.random() * cvs.height;
                 foodEaten = true;
